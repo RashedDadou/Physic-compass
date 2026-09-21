@@ -1,15 +1,5 @@
 # Physic-compass
 Coordinate system transformation - Magnetic declination / Grid convergence - ZYX rotation (intrinsic)- Perspective projection (MVP) - float64 and GPU tensor support ...etc
-The idea of ​​developing the physical 3D compass project began on September 13, 2026.
-
----
-
-## 📐 System Architecture Documentation: Compass-Centric 3D Physical Simulation & Spatial Pipeline Engine
-
-**System Author:** Rashed Dadouch  
-**Architecture Paradigm:** Physic-compass Reference Frame (Explicit Topology Scaling)  
-**Target Environment:** Windows | Python 3.12 | CUDA 12.4 | PyTorch Tensor Acceleration | Tkinter GUI Canvas  
-**Execution Metric Standard:** Machine-Epsilon Precision ($10^{-16}$)  
 
 ---
 
@@ -279,4 +269,12 @@ zyx_grid_ground.py,                 Spatial spatial lines generator; supports CP
 zyx_compass.py,                     Main interactive engine orchestrating dynamic matrix transformation and Canvas visual feedback.,       PyTorch CUDA & Tkinter UI
 
 ---
+
+## 📐 System Architecture Documentation: Compass-Centric 3D Physical Simulation & Spatial Pipeline Engine
+
+**System Author:** Rashed Dadouch  
+**Architecture Paradigm:** Physic-compass Reference Frame (Explicit Topology Scaling)  
+**Target Environment:** Windows | Python 3.12 | CUDA 12.4 | PyTorch Tensor Acceleration | Tkinter GUI Canvas  
+**Execution Metric Standard:** Machine-Epsilon Precision ($10^{-16}$)  
+The idea of ​​developing the physical 3D compass project began on September 13, 2026.
 
