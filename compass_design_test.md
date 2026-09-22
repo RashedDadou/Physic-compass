@@ -85,132 +85,109 @@ The system demonstrates exceptional mathematical integrity, rendering efficiency
 
 🧭 COMPASS DESIGN SYSTEM — FULL DIAGNOSTIC SUITE & BENCHMARK
 
-C:\Users\Rashed_Dadou\Desktop\Work_Flow\Physics_Math_Core\Project\GUI>python test_compass_design.py
-2026-09-22 14:14:10,017 - [INFO] - TestCompassDesign -  
-2026-09-22 14:14:10,017 - [INFO] - TestCompassDesign - 
-2026-09-22 14:14:10,018 - [INFO] - TestCompassDesign -  
-2026-09-22 14:14:10,021 - [INFO] - TestCompassDesign -  STATUS: Visualizer Main Interface & Internal Pipelines Initialized Successfully
+# 🧭 Compass Design System — Full Diagnostic Log
 
-2026-09-22 14:14:10,021 - [INFO] - TestCompassDesign -
+**Execution Command:**
+`python test_compass_design.py`
 
---- 
-
-## TEST 1: CORRECTED - Perspective Projection with Real Physics 
-
-2026-09-22 14:14:10,022 - [INFO] - TestCompassDesign - ✓ TEST 1 PASSED - Perspective Projected Vectors:
-2026-09-22 14:14:10,024 - [INFO] - TestCompassDesign -   Canvas: 1920×1080 | Focal Length: 1662.77 | Viewport Distance: 500.0
-2026-09-22 14:14:10,025 - [INFO] - TestCompassDesign -   Dir    | Screen Pos X    | Screen Pos Y    | Distance to Center
-2026-09-22 14:14:10,026 - [INFO] - TestCompassDesign -   ------------------------------------------------------------
-2026-09-22 14:14:10,027 - [INFO] - TestCompassDesign -   N      |            0.00 |          831.38 | 1003.25 pixels
-2026-09-22 14:14:10,027 - [INFO] - TestCompassDesign -   E      |          831.38 |            0.00 | 555.11 pixels
-2026-09-22 14:14:10,029 - [INFO] - TestCompassDesign -   S      |            0.00 |         -831.38 | 1674.01 pixels
-2026-09-22 14:14:10,029 - [INFO] - TestCompassDesign -   W      |         -831.38 |            0.00 | 1871.00 pixels
-2026-09-22 14:14:10,030 - [INFO] - TestCompassDesign -   UP     |            0.00 |            0.00 | 1101.45 pixels
-2026-09-22 14:14:10,031 - [INFO] - TestCompassDesign -   DOWN   |            0.00 |            0.00 | 1101.45 pixels
-2026-09-22 14:14:10,032 - [INFO] - TestCompassDesign - 
+**System Status:**
+Visualizer Main Interface & Internal Pipelines Initialized Successfully.
 
 ---
 
-## TEST 2: CORRECTED - Real Rotation Matrices (Euler XYZ) 
+## 🧪 Test 1: Perspective Projection with Real Physics
 
-2026-09-22 14:14:10,065 - [INFO] - TestCompassDesign - ✓ PyTorch available | CUDA: True
-2026-09-22 14:14:10,066 - [INFO] - TestCompassDesign -   Rotation Matrix (Pitch=15.0°, Yaw=45.0°, Roll=0.0°):
-2026-09-22 14:14:10,066 - [INFO] - TestCompassDesign -
-[[ 0.70710677 -0.6830127   0.18301271]
- [ 0.70710677  0.6830127  -0.18301271]
- [ 0.          0.25881904  0.9659258 ]]
+* **Canvas Resolution:** $1920 \times 1080\text{ px}$
+* **Focal Length:** $1662.77\text{ px}$
+* **Viewport Distance:** $500.0\text{ units}$
 
-2026-09-22 14:14:10,067 - [INFO] - TestCompassDesign - ✓ TEST 2 PASSED - Rotated Vectors (World Space):
-2026-09-22 14:14:10,068 - [INFO] - TestCompassDesign -   Dir    |          X |          Y |          Z | Length
-2026-09-22 14:14:10,071 - [INFO] - TestCompassDesign -   --------------------------------------------------
-2026-09-22 14:14:10,072 - [INFO] - TestCompassDesign -   N      |    -0.6830 |     0.6830 |     0.2588 | 1.0000
-2026-09-22 14:14:10,073 - [INFO] - TestCompassDesign -   E      |     0.7071 |     0.7071 |     0.0000 | 1.0000
-2026-09-22 14:14:10,074 - [INFO] - TestCompassDesign -   S      |     0.6830 |    -0.6830 |    -0.2588 | 1.0000
-2026-09-22 14:14:10,077 - [INFO] - TestCompassDesign -   W      |    -0.7071 |    -0.7071 |     0.0000 | 1.0000
-2026-09-22 14:14:10,078 - [INFO] - TestCompassDesign -   UP     |     0.1830 |    -0.1830 |     0.9659 | 1.0000
-2026-09-22 14:14:10,079 - [INFO] - TestCompassDesign -   DOWN   |    -0.1830 |     0.1830 |    -0.9659 | 1.0000
-2026-09-22 14:14:10,087 - [INFO] - TestCompassDesign -
+### Vector Projections Table
+| Direction | Screen Pos X (px) | Screen Pos Y (px) | Distance to Center (px) |
+| :--- | :---: | :---: | :---: |
+| **N** | $0.00$ | $831.38$ | $1003.25$ |
+| **E** | $831.38$ | $0.00$ | $555.11$ |
+| **S** | $0.00$ | $-831.38$ | $1674.01$ |
+| **W** | $-831.38$ | $0.00$ | $1871.00$ |
+| **UP** | $0.00$ | $0.00$ | $1101.45$ |
+| **DOWN** | $0.00$ | $0.00$ | $1101.45$ |
+
+**Status:** `✓ TEST 1 PASSED`
 
 ---
 
-## TEST 3: GIMBAL LOCK SINGULARITY DETECTION 
+## 🧪 Test 2: Rotation Matrices (Euler XYZ)
 
-2026-09-22 14:14:10,088 - [INFO] - TestCompassDesign - 
-2026-09-22 14:14:10,089 - [INFO] - TestCompassDesign - 
-2026-09-22 14:14:10,090 - [INFO] - TestCompassDesign - Testing Gimbal Lock scenarios...
+* **Environment:** PyTorch Available | **CUDA Acceleration:** `True`
+* **Rotation Angles:** $\text{Pitch} = 15.0^\circ, \text{Yaw} = 45.0^\circ, \text{Roll} = 0.0^\circ$
 
-2026-09-22 14:14:10,091 - [INFO] - TestCompassDesign - Case 1: pitch=0.0°, yaw=45.0°, roll=30.0°
-2026-09-22 14:14:10,092 - [INFO] - TestCompassDesign -   ├─ Orthogonality Error: 5.32e-17 (Numerical Matrix Stability)
-2026-09-22 14:14:10,093 - [INFO] - TestCompassDesign -   ├─ Singularity Metric (cos(p)): 1.000000 ✓ Safe
-2026-09-22 14:14:10,093 - [INFO] - TestCompassDesign -   └─ Expected Safe: ✓ | Result: PASSED
+### Computed Rotation Matrix
+$$\begin{bmatrix}  0.70710677 & -0.6830127 & 0.18301271 \\ 0.70710677 & 0.6830127 & -0.18301271 \\ 0.0 & 0.25881904 & 0.9659258 \end{bmatrix}$$
 
-2026-09-22 14:14:10,094 - [INFO] - TestCompassDesign - Case 2: pitch=90.0°, yaw=45.0°, roll=30.0°
-2026-09-22 14:14:10,102 - [INFO] - TestCompassDesign -   ├─ Orthogonality Error: 2.47e-16 (Numerical Matrix Stability)
-2026-09-22 14:14:10,105 - [INFO] - TestCompassDesign -   ├─ Singularity Metric (cos(p)): 0.000000 ⚠️  GIMBAL LOCK DETECTED!
-2026-09-22 14:14:10,105 - [INFO] - TestCompassDesign -   └─ Expected Safe: ❌ DANGER | Result: PASSED
+### Rotated Vectors (World Space)
+| Direction | X | Y | Z | Length |
+| :--- | :---: | :---: | :---: | :---: |
+| **N** | $-0.6830$ | $0.6830$ | $0.2588$ | $1.0000$ |
+| **E** | $0.7071$ | $0.7071$ | $0.0000$ | $1.0000$ |
+| **S** | $0.6830$ | $-0.6830$ | $-0.2588$ | $1.0000$ |
+| **W** | $-0.7071$ | $-0.7071$ | $0.0000$ | $1.0000$ |
+| **UP** | $0.1830$ | $-0.1830$ | $0.9659$ | $1.0000$ |
+| **DOWN** | $-0.1830$ | $0.1830$ | $-0.9659$ | $1.0000$ |
 
-2026-09-22 14:14:10,106 - [INFO] - TestCompassDesign - Case 3: pitch=-90.0°, yaw=10.0°, roll=20.0°
-2026-09-22 14:14:10,107 - [INFO] - TestCompassDesign -   ├─ Orthogonality Error: 1.15e-16 (Numerical Matrix Stability)
-2026-09-22 14:14:10,108 - [INFO] - TestCompassDesign -   ├─ Singularity Metric (cos(p)): 0.000000 ⚠️  GIMBAL LOCK DETECTED!
-2026-09-22 14:14:10,109 - [INFO] - TestCompassDesign -   └─ Expected Safe: ❌ DANGER | Result: PASSED
-
-2026-09-22 14:14:10,110 - [INFO] - TestCompassDesign - Case 4: pitch=89.9°, yaw=45.0°, roll=30.0°
-2026-09-22 14:14:10,111 - [INFO] - TestCompassDesign -   ├─ Orthogonality Error: 2.49e-16 (Numerical Matrix Stability)
-2026-09-22 14:14:10,112 - [INFO] - TestCompassDesign -   ├─ Singularity Metric (cos(p)): 0.001745 ✓ Safe
-2026-09-22 14:14:10,113 - [INFO] - TestCompassDesign -   └─ Expected Safe: ✓ | Result: PASSED
+**Status:** `✓ TEST 2 PASSED`
 
 ---
 
-## TEST 4: QUATERNION vs EULER NUMERICAL STABILITY
+## 🧪 Test 3: Gimbal Lock Singularity Detection
 
-2026-09-22 14:14:10,118 - [INFO] - TestCompassDesign -
-======================================================================
-2026-09-22 14:14:10,119 - [INFO] - TestCompassDesign - 
-2026-09-22 14:14:10,120 - [INFO] - TestCompassDesign - 
-2026-09-22 14:14:10,133 - [INFO] - TestCompassDesign - After 1000 consecutive incremental rotations:
-2026-09-22 14:14:10,133 - [INFO] - TestCompassDesign -   ├─ Euler Matrix Orthogonality Error: 3.87e-14
-2026-09-22 14:14:10,134 - [INFO] - TestCompassDesign -   ├─ Quaternion Orthogonality Error:   7.08e-16
-2026-09-22 14:14:10,136 - [INFO] - TestCompassDesign -   ├─ Improvement Factor: 38.70× ✓ Quaternions are more stable!
-2026-09-22 14:14:10,137 - [INFO] - TestCompassDesign -   └─ Condition Numbers: Euler=1.000000 | Quat=1.000000
-
--- 
-
-## TEST 5: LENS DISTORTION CORRECTION MODEL
-
-2026-09-22 14:14:10,139 - [INFO] - TestCompassDesign -
-======================================================================
-2026-09-22 14:14:10,139 - [INFO] - TestCompassDesign - 
-2026-09-22 14:14:10,143 - [INFO] - TestCompassDesign - 
-2026-09-22 14:14:10,149 - [INFO] - TestCompassDesign - Lens Distortion Model: Wide-angle (Normalized)
-2026-09-22 14:14:10,149 - [INFO] - TestCompassDesign -   k1=-0.150, k2=0.030 | p1=0.0001, p2=0.0001
-
-2026-09-22 14:14:10,150 - [INFO] - TestCompassDesign - Point           | Original (x,y)       | Distorted (x,y)      | Error (pixels)
-2026-09-22 14:14:10,156 - [INFO] - TestCompassDesign - ---------------------------------------------------------------------------
-2026-09-22 14:14:10,158 - [INFO] - TestCompassDesign - Center          | (  400.00,   400.00) | (  400.00,   400.00) | 0.000000
-2026-09-22 14:14:10,161 - [INFO] - TestCompassDesign - Right           | (  500.00,   400.00) | (  499.41,   400.00) | 0.000000
-2026-09-22 14:14:10,161 - [INFO] - TestCompassDesign - Top             | (  400.00,   500.00) | (  400.00,   499.41) | 0.000000
-2026-09-22 14:14:10,163 - [INFO] - TestCompassDesign - Diagonal        | (  500.00,   500.00) | (  498.83,   498.83) | 0.000000
-2026-09-22 14:14:10,164 - [INFO] - TestCompassDesign - Far corner      | (  700.00,   700.00) | (  672.37,   672.37) | 0.000001
-2026-09-22 14:14:10,165 - [INFO] - TestCompassDesign -
-  ✓ Maximum Correction Error: 0.000001 pixels
+| Test Case | Angles (Pitch, Yaw, Roll) | Orthogonality Error | Singularity Metric $\cos(\text{Pitch})$ | Result / Status |
+| :--- | :--- | :---: | :---: | :---: |
+| **Case 1** | $0.0^\circ, 45.0^\circ, 30.0^\circ$ | $5.32 \times 10^{-17}$ | $1.000000$ | `✓ Safe` |
+| **Case 2** | $90.0^\circ, 45.0^\circ, 30.0^\circ$ | $2.47 \times 10^{-16}$ | $0.000000$ | `⚠️ GIMBAL LOCK DETECTED` |
+| **Case 3** | $-90.0^\circ, 10.0^\circ, 20.0^\circ$ | $1.15 \times 10^{-16}$ | $0.000000$ | `⚠️ GIMBAL LOCK DETECTED` |
+| **Case 4** | $89.9^\circ, 45.0^\circ, 30.0^\circ$ | $2.49 \times 10^{-16}$ | $0.001745$ | `✓ Safe` |
 
 ---
 
-## TEST 6: VISUAL RENDER WITH REAL PHYSICS (CORRECTED)
+## 🧪 Test 4: Quaternion vs Euler Numerical Stability
 
-2026-09-22 14:14:10,169 - [INFO] - TestCompassDesign -
-======================================================================
-2026-09-22 14:14:10,169 - [INFO] - TestCompassDesign - 
-2026-09-22 14:14:10,171 - [INFO] - TestCompassDesign - ======================================================================
-2026-09-22 14:14:10,275 - [INFO] - TestCompassDesign - ✓ TEST 6 RENDERING WITH CALIBRATED PHYSICS:
-2026-09-22 14:14:10,275 - [INFO] - TestCompassDesign -   ├─ Canvas: 1920×1080 pixels
-2026-09-22 14:14:10,276 - [INFO] - TestCompassDesign -   ├─ Focal Length: 1662.77 pixels
-2026-09-22 14:14:10,277 - [INFO] - TestCompassDesign -   ├─ Viewport Distance: 500.0 units
-2026-09-22 14:14:10,278 - [INFO] - TestCompassDesign -   ├─ Camera Rotation: Pitch=15.0°, Yaw=45.0°, Roll=0.0°
-2026-09-22 14:14:10,279 - [INFO] - TestCompassDesign -   ├─ Principal Point: (960.0, 540.0)
-2026-09-22 14:14:10,279 - [INFO] - TestCompassDesign -   └─ Rotation Matrix Determinant: 1.000000 (should be 1.0)
-2026-09-22 14:14:13,294 - [INFO] - TestCompassDesign - ✓ TEST 6 PASSED - Visual Render Complete
-2026-09-22 14:14:13,318 - [INFO] - TestCompassDesign -
+**Test Condition:** 1000 consecutive incremental rotations.
+
+* **Euler Matrix Orthogonality Error:** $3.87 \times 10^{-14}$
+* **Quaternion Orthogonality Error:** $7.08 \times 10^{-16}$
+* **Improvement Factor:** **$38.70\times$** *(Quaternions are significantly more stable)*
+* **Matrix Condition Numbers:** $\text{Euler} = 1.000000 \mid \text{Quaternion} = 1.000000$
+
+---
+
+## 🧪 Test 5: Lens Distortion Correction Model
+
+* **Distortion Model:** Wide-angle (Normalized)
+* **Parameters:** $k_1 = -0.150, k_2 = 0.030 \mid p_1 = 0.0001, p_2 = 0.0001$
+
+| Point Description | Original $(X, Y)$ | Distorted $(X, Y)$ | Correction Error (px) |
+| :--- | :---: | :---: | :---: |
+| **Center** | $(400.00, 400.00)$ | $(400.00, 400.00)$ | $0.000000$ |
+| **Right** | $(500.00, 400.00)$ | $(499.41, 400.00)$ | $0.000000$ |
+| **Top** | $(400.00, 500.00)$ | $(400.00, 499.41)$ | $0.000000$ |
+| **Diagonal** | $(500.00, 500.00)$ | $(498.83, 498.83)$ | $0.000000$ |
+| **Far Corner** | $(700.00, 700.00)$ | $(672.37, 672.37)$ | $0.000001$ |
+
+* **Maximum Correction Error:** $0.000001\text{ pixels}$
+
+---
+
+## 🧪 Test 6: Visual Render with Calibrated Physics
+
+* **Canvas:** $1920 \times 1080\text{ pixels}$
+* **Focal Length:** $1662.77\text{ pixels}$
+* **Viewport Distance:** $500.0\text{ units}$
+* **Camera Rotation:** $\text{Pitch} = 15.0^\circ, \text{Yaw} = 45.0^\circ, \text{Roll} = 0.0^\circ$
+* **Principal Point:** $(960.0, 540.0)$
+* **Rotation Matrix Determinant:** $1.000000$
+
+**Status:** `✓ TEST 6 PASSED - Visual Render Complete`
+
+
 ================================================================================
 2026-09-22 14:14:13,318 - [INFO] - TestCompassDesign - TEST 7: PROJECTION METHODS COMPARISON (PHYSICS-CORRECTED)
 2026-09-22 14:14:13,319 - [INFO] - TestCompassDesign - ================================================================================
