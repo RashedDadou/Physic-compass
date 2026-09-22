@@ -33,20 +33,20 @@ Specialized supporting modules reside at the top of the structural tree as indep
 
 ## 3. Module Functional Analysis
 
-### 3.1. UI & Rendering Tools (zyx_compass_design_tool.py)
+### 3.1. UI & Rendering Tools (`zyx_compass_design_tool.py / zyx_compass_design_tool.py`)
 * **Functional Role:** Visual Abstraction & GUI Layer.
 * **Core Responsibilities:**
   1. Transform projected and translated coordinates from the computation layer into live graphical elements (arrows, markers, and text labels) renderable on a Canvas viewport.
   2. Provide a simplified Facade API to seamlessly bind visual elements to any presentation environment without entangling the UI with spatial transformation details.
 
-### 3.2. Telemetry & Diagnostics Module (zyx_compass_design_info.py)
+### 3.2. Telemetry & Diagnostics Module (`zyx_compass_design_info.py`)
 * **Functional Role:** Quality Assurance & Live Data Aggregation.
 * **Core Responsibilities:**
   1. Perform continuous validation checks on generated matrices (such as ensuring $\det(R) = 1.00000000$).
   2. Monitor for Gimbal Lock conditions, verify the orthogonality of the six primary axes ($N, E, S, W, UP, DOWN$), and enforce unit lengths at $1.0$.
   3. Aggregate logs and export JSON telemetry reports to evaluate system health dynamically and under stress test conditions.
 
-### 3.3. Math & CUDA Projection Pipeline (zyx_compass_design_pipeline.py)
+### 3.3. Math & CUDA Projection Pipeline (`zyx_compass_design_pipeline.py`)
 * **Functional Role:** High-Performance Math Engine.
 * **Core Responsibilities:**
   1. Compute spatial rotation matrices $SO(3)$ in `Float64` precision to eliminate cumulative floating-point errors.
@@ -54,7 +54,7 @@ Specialized supporting modules reside at the top of the structural tree as indep
      $$\mathbf{P}_{\text{clip}} = \mathbf{K}_{\text{Proj}} \cdot \mathbf{V}_{\text{View}} \cdot \mathbf{M}_{\text{Model}} \cdot \mathbf{V}_{\text{Compass}}$$
   3. Exploit parallel processing via **CUDA / Vectorized Operations** to handle batch data processing in execution times under $0.06\text{ ms}$ for 10,000 vectors.
 
-### 3.4. Main Coordinator Core (zyx_compass_design.py)
+### 3.4. Main Coordinator Core (`zyx_compass_design.py`)
 * **Functional Role:** Master Coordinator & Core Integrator.
 * **Core Responsibilities:**
   1. Direct invocation and structural binding of the subordinate units (`tool`, `info`, `pipeline`).
