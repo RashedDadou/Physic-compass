@@ -1,4 +1,4 @@
-# 🧭 Project Overview
+# Project Overview
 
 The project is a lightweight 3D compass simulation and geometric projection engine built using **Python**, **NumPy**, and **PyTorch** with **CUDA** acceleration. It handles visual projections, rotation matrices, lens distortion corrections, and numerical stability/performance evaluations across various projection techniques without relying on external game engines.
 
@@ -51,7 +51,7 @@ Built on **Tkinter Canvas** to provide a lightweight interface that renders the 
 
 ---
 
-# 📊 System Performance & Benchmark Data
+## 📊 System Performance & Benchmark Data
 
 Based on the execution diagnostic logs:
 
@@ -80,8 +80,7 @@ Based on the execution diagnostic logs:
 
 ---
 
-# Test Result
-
+## Test Result
 The system demonstrates exceptional mathematical integrity, rendering efficiency, and numerical stability with zero memory/precision leaks under load :
 
 
@@ -92,7 +91,11 @@ C:\Users\Rashed_Dadou\Desktop\Work_Flow\Physics_Math_Core\Project\GUI>python tes
 2026-09-22 14:14:10,021 - [INFO] - TestCompassDesign -  STATUS: Visualizer Main Interface & Internal Pipelines Initialized Successfully
 
 2026-09-22 14:14:10,021 - [INFO] - TestCompassDesign -
---- [TEST 1: CORRECTED - Perspective Projection with Real Physics] ---
+
+--- 
+
+[TEST 1: CORRECTED - Perspective Projection with Real Physics] 
+
 2026-09-22 14:14:10,022 - [INFO] - TestCompassDesign - ✓ TEST 1 PASSED - Perspective Projected Vectors:
 2026-09-22 14:14:10,024 - [INFO] - TestCompassDesign -   Canvas: 1920×1080 | Focal Length: 1662.77 | Viewport Distance: 500.0
 2026-09-22 14:14:10,025 - [INFO] - TestCompassDesign -   Dir    | Screen Pos X    | Screen Pos Y    | Distance to Center
@@ -103,14 +106,18 @@ C:\Users\Rashed_Dadou\Desktop\Work_Flow\Physics_Math_Core\Project\GUI>python tes
 2026-09-22 14:14:10,029 - [INFO] - TestCompassDesign -   W      |         -831.38 |            0.00 | 1871.00 pixels
 2026-09-22 14:14:10,030 - [INFO] - TestCompassDesign -   UP     |            0.00 |            0.00 | 1101.45 pixels
 2026-09-22 14:14:10,031 - [INFO] - TestCompassDesign -   DOWN   |            0.00 |            0.00 | 1101.45 pixels
-2026-09-22 14:14:10,032 - [INFO] - TestCompassDesign -
---- [TEST 2: CORRECTED - Real Rotation Matrices (Euler XYZ)] ---
+2026-09-22 14:14:10,032 - [INFO] - TestCompassDesign - 
+
+[TEST 2: CORRECTED - Real Rotation Matrices (Euler XYZ)] 
+
 2026-09-22 14:14:10,065 - [INFO] - TestCompassDesign - ✓ PyTorch available | CUDA: True
 2026-09-22 14:14:10,066 - [INFO] - TestCompassDesign -   Rotation Matrix (Pitch=15.0°, Yaw=45.0°, Roll=0.0°):
 2026-09-22 14:14:10,066 - [INFO] - TestCompassDesign -
 [[ 0.70710677 -0.6830127   0.18301271]
  [ 0.70710677  0.6830127  -0.18301271]
  [ 0.          0.25881904  0.9659258 ]]
+
+---
 
 2026-09-22 14:14:10,067 - [INFO] - TestCompassDesign - ✓ TEST 2 PASSED - Rotated Vectors (World Space):
 2026-09-22 14:14:10,068 - [INFO] - TestCompassDesign -   Dir    |          X |          Y |          Z | Length
@@ -122,8 +129,12 @@ C:\Users\Rashed_Dadou\Desktop\Work_Flow\Physics_Math_Core\Project\GUI>python tes
 2026-09-22 14:14:10,078 - [INFO] - TestCompassDesign -   UP     |     0.1830 |    -0.1830 |     0.9659 | 1.0000
 2026-09-22 14:14:10,079 - [INFO] - TestCompassDesign -   DOWN   |    -0.1830 |     0.1830 |    -0.9659 | 1.0000
 2026-09-22 14:14:10,087 - [INFO] - TestCompassDesign -
-======================================================================
-2026-09-22 14:14:10,088 - [INFO] - TestCompassDesign - TEST 3: GIMBAL LOCK SINGULARITY DETECTION
+
+---
+
+[TEST 3: GIMBAL LOCK SINGULARITY DETECTION] 
+
+2026-09-22 14:14:10,088 - [INFO] - TestCompassDesign - 
 2026-09-22 14:14:10,089 - [INFO] - TestCompassDesign - ======================================================================
 2026-09-22 14:14:10,090 - [INFO] - TestCompassDesign - Testing Gimbal Lock scenarios...
 
